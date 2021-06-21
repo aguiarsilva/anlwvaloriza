@@ -1,0 +1,10 @@
+{
+  "name": "anlwvaloriza",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "aguiarsilva <aguiarsilva@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.3.4"
+  }
+}
