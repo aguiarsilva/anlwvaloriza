@@ -1,4 +1,4 @@
-import {DriverOptionNotSetError, FindRelationsNotFoundError, MigrationInterface, QueryRunner, Table} from "typeorm";
+import { MigrationInterface, QueryRunner, Table } from "typeorm";
 
 export class CreateUsers1624370125984 implements MigrationInterface {
 
@@ -34,8 +34,8 @@ export class CreateUsers1624370125984 implements MigrationInterface {
                         name:"updated_at",
                         type:"timestamp",
                         default:"now()"
-                    }
-                ]
+                    },
+                ],
             })
         );
     }
