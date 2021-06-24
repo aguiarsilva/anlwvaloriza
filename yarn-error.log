@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /home/brunnolas/.yarn/bin/yarn.js add @types/typeorm
+  /usr/bin/node /home/brunnolas/.yarn/bin/yarn.js add @types/typeorm -D
 
 PATH: 
   /home/brunnolas/.yarn/bin:/home/brunnolas/.config/yarn/global/node_modules/.bin:/home/brunnolas/.yarn/bin:/home/brunnolas/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/local/sbin:/home/brunnolas/.local/bin:/usr/bin:/var/lib/snapd/snap/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/brunnolas/.yadr/bin:/home/brunnolas/.yadr/bin/yadr
@@ -45,6 +45,7 @@ npm manifest:
       },
       "dependencies": {
           "express": "^4.17.1",
+          "express-async-errors": "^3.1.1",
           "reflect-metadata": "^0.1.13",
           "sqlite3": "^5.0.2",
           "typeorm": "^0.2.34",
@@ -641,6 +642,11 @@ Lockfile:
     version "1.8.1"
     resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
     integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
+  
+  express-async-errors@^3.1.1:
+    version "3.1.1"
+    resolved "https://registry.yarnpkg.com/express-async-errors/-/express-async-errors-3.1.1.tgz#6053236d61d21ddef4892d6bd1d736889fc9da41"
+    integrity sha512-h6aK1da4tpqWSbyCa3FxB/V6Ehd4EEB15zyQq9qe75OZBp0krinNKuH4rAY+S/U/2I36vdLAUFSjQJ+TFmODng==
   
   express@^4.17.1:
     version "4.17.1"
