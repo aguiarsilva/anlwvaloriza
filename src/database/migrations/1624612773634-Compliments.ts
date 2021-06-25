@@ -43,7 +43,24 @@ export class Compliments1624612773634 implements MigrationInterface {
                         columnNames: ["user_sender"],
                         onDelete: "SET NULL",
                         onUpdate: "SET NULL"
-                    }
+                    },
+                    {
+                        name: "FKUserReceiverCompliments",
+                        referencedTableName: "users",
+                        referencedColumnNames: ["id"],
+                        columnNames: ["user_receiver"],
+                        onDelete: "SET NULL",
+                        onUpdate: "SET NULL"
+                    },
+                    {
+                        name: "FKTagCompliments",
+                        referencedTableName: "tags",
+                        referencedColumnNames: ["id"],
+                        columnNames: ["tag_id"],
+                        onDelete: "SET NULL",
+                        onUpdate: "SET NULL"
+                    },
+
                 ]
                 
             })
@@ -62,6 +79,7 @@ export class Compliments1624612773634 implements MigrationInterface {
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.dropTable("compliments");
     }
 
 }
